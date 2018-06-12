@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blackbg2"
+    tools:context=".activity.SelfCenter">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/patient" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/blackbg" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="57dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginTop="16dp"
+                android:text="账号"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="16dp"
+                android:text="WangJingze"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="67dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginTop="16dp"
+                android:text="邮箱"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginTop="16dp"
+                android:text="角色"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="16dp"
+
+                style="@style/TextAppearance.AppCompat.Title"
+                android:text="普通用户"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/TextAppearance.AppCompat.Title"
+
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="验证/修改邮箱"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/TextAppearance.AppCompat.Title"
+
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="验证/修改手机"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_height="54dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="#FFFFFF" />
+
+
+    </TableLayout>
+
+</RelativeLayout>

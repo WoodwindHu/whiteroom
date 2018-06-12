@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- layout for the selected baked good -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="@dimen/layout_padding"
+
+    >
+
+    <!-- image of the good -->
+
+    <ImageView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/selected_image_height"
+
+        android:contentDescription="@null"
+
+        android:id="@+id/selected_good_iv_picture"
+
+        android:scaleType="fitCenter"
+
+        tools:src="@drawable/item_1"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="282dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/good_name"
+
+            style="@style/TextAppearance.AppCompat.Title"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/selected_good_iv_picture"
+
+            android:layout_marginTop="@dimen/layout_padding"
+
+            android:text="黄焖鸡米饭"
+
+            />
+
+        <TextView
+            android:id="@+id/good_price"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="367dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/good_name"
+            android:layout_centerHorizontal="true"
+            android:text="12 RMB" />
+
+        <TextView
+
+            android:id="@+id/good_item_tv_value"
+
+            style="@style/TextAppearance.AppCompat.Title"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/selected_good_iv_picture"
+
+            android:layout_marginTop="@dimen/layout_padding"
+
+            android:text="口味"
+
+            />
+
+        <!-- button to add this good to cart -->
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/selected_good_tv_size"
+            android:layout_centerHorizontal="true">
+
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="特辣" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="微辣" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="不辣" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="加入购物车" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/selected_good_iv_picture"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="73dp"
+        android:clickable="true"
+
+        app:backgroundTint="?attr/colorButtonNormal"
+
+
+        app:elevation="0dp"
+        app:srcCompat="@drawable/u4" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="146dp"
+        android:clickable="true"
+        app:backgroundTint="?attr/colorButtonNormal"
+
+
+        app:srcCompat="@drawable/ic_shopping_cart_normal" />
+
+
+</RelativeLayout>
